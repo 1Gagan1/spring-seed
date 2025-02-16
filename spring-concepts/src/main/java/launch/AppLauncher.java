@@ -1,10 +1,15 @@
 package launch;
 
+import java.util.Arrays;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import beans.Account;
 import beans.Customer;
+import soundsystem.CDPlayer;
+import soundsystem.CompactDisk;
+import soundsystem.SidhuMoosewala;
 
 public class AppLauncher {
 	
@@ -16,10 +21,19 @@ public class AppLauncher {
 		
 		
 		System.out.println("Spring creating application beans");
-		ApplicationContext context = new AnnotationConfigApplicationContext(config.AppConfig.class);
-		Customer springCustomer = (Customer) context.getBean("customer");
+		ApplicationContext accountApp = new AnnotationConfigApplicationContext(config.AppConfig.class);
+		Customer springCustomer = (Customer) accountApp.getBean("customer");
 		System.out.println("Customer Name is - "+ springCustomer.getName() + " and Account active is - " + springCustomer.getAccount().getAccountTypeName());
 		
+		
+		ApplicationContext musicApp = new AnnotationConfigApplicationContext(config.CDPlayerConfig.class);
+		CompactDisk sidhu = (CompactDisk) musicApp.getBean("5911");
+		CompactDisk karan = (CompactDisk) musicApp.getBean("karan");
+		CDPlayer sonydx101 = (CDPlayer) musicApp.getBean("sonydx101");
+		// springDisk.play();
+		sonydx101.play(sidhu);
+		sonydx101.play(karan);
+		// System.out.println(Arrays.asList(contex2.getBeanDefinitionNames()));
 		
 	
 	}

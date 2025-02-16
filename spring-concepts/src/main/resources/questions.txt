@@ -1,0 +1,31 @@
+    What is Spring and Spring Boot?
+    Difference between Spring and Spring Boot?
+    What is Dependency Injection?
+    What is Inversion of Control?
+    Inversion of Control vs Dependency Injection?
+    What happen when we start spring boot application?
+    What is Bean ? Explain about Bean LifeCycle? Explain about different types of Bean?
+    How to change port number in spring boot application?
+    Which server spring boot uses internally? How to change that?
+    What is graceful shutdown?
+    How to implement paging and sorting in Spring Boot?
+    What is @SpringBootApplication?
+    Explain about different annotations like @Service, @Controller, @RestController, @Entity, @Component, @Repository, @Autowired, @Required, @Primary, @Async, @Transient, @ComponentScan?
+    Difference between @Controller vs @RestController?
+    What is use of @Configuration?
+    What does autowiring mean? Types of autowiring?
+    What is ApplicationContext?
+    Difference between @Bean vs @Component?
+    What is Aspect Oriented Programming?
+    What is @Qualifier annotation?
+    What is @Primary annoatation?
+    What are uses of filter and ControllerAdvice?
+    Explain about different HTTP Methods?
+    What is Idempotency? Explain about Idempotent methods?
+    What is @Transactional annotation? Understand its uses?
+    What is actuator? Explain about few endpoints of actuator?
+    What is Profiling in Spring boot?
+    How Spring Knows Property file location? explain about different properties?
+    @Async in Spring Boot?
+    Difference between CrudRepository vs JPARespository?
+    Explain about different starter dependencies of Spring boot?
